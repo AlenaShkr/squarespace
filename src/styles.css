@@ -1,0 +1,21 @@
+@import url(base/normalize.css);
+* {
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+:root {
+  font-size: 10px; }
+  @media only screen and (max-width: 1024px) {
+    :root {
+      font-size: 8px; } }
+  @media only screen and (max-width: 768px) {
+    :root {
+      font-size: 10px; } }
+  @media only screen and (max-width: 768px) {
+    :root {
+      font-size: 8px; } }
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto; }

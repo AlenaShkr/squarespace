@@ -1,0 +1,32 @@
+@import 'abstracts/variables';
+@import 'abstracts/fonts';
+@import 'base/normalize.css';
+// @import 'components';
+// @import 'layout';
+// @import 'pages';
+@import 'themes/theme';
+@import 'vendors/bootstrap';
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  font-size: 10px;
+  @media only screen and (max-width: 1024px){
+    font-size: 8px;
+  }
+  @media only screen and (max-width: $tablet){
+    font-size: 10px;
+  }
+  @media only screen and (max-width: $tablet){
+    font-size: 8px;
+  }
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto;
+}

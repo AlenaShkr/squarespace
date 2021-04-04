@@ -1,0 +1,100 @@
+.our-pets {
+    font-size: 10px;
+    .wrapper {
+        @media only screen and (max-width: 768px){
+            max-width: 708px;
+          }
+        @media only screen and (max-width: $mobile){
+           max-width: 300px;
+    }
+}
+    .header {
+        position: static;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        *{
+            color: $color-dark-l;
+        }  
+        .header-menu-list {
+            @media only screen and (max-width: $mobile) {
+                /*display: none;*/
+            }
+        }
+    }
+    .pets {
+        &__wrapper {
+            padding-top: 8rem;
+            padding-bottom: 10rem;
+            @media only screen and (max-width: 768px) {
+            padding-top: 7rem;
+            padding-bottom: 7.7rem;
+            }
+            @media only screen and (max-width: $mobile) {
+                padding-top: 4rem;
+                padding-bottom: 3.1rem;
+            }
+        }
+        &__title {
+            margin-bottom: 4rem;
+            @media only screen and (max-width: $mobile) {
+                margin-bottom: 4.8rem;
+            }
+            h3 {
+                @media only screen and (max-width: $mobile) {
+                    font-size: 2.5rem;
+                    line-height: 3.2rem;
+                }
+            }   
+        }
+        &__content {
+            padding-top: 2rem;
+            padding-bottom: 6rem;
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem 4rem;
+            order: 1;
+            overflow: hidden;
+            @media only screen and (max-width: 768px){
+                max-width: 58rem;
+                margin: 0 auto;
+                padding: 0;
+                padding-bottom: 4rem;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: 50% 50% 0px;
+                gap: 3rem 2rem;
+                justify-content: space-between;
+            }
+            @media only screen and (max-width: $mobile){
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: 100% 0px 0px;
+                padding-bottom: 3rem;
+            }
+          
+          .card {
+              width: 27rem;
+              @media only screen and (max-width: $mobile) {
+                margin: 0 auto;
+            }
+          }
+        }
+    }
+    .card__pagination {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding-left: 2rem;
+        order: 1;
+        @media only screen and (max-width: $mobile) {
+            justify-content: space-between;
+            padding-left: 0rem;
+        }
+        .button-pagination {
+            margin-right: 2rem;
+            @media only screen and (max-width: $mobile) {
+                margin-right: 0rem;
+            }
+        }
+    }
+}
