@@ -1,8 +1,9 @@
 @import 'abstracts/variables';
 @import 'abstracts/fonts';
-@import 'base/normalize.css';
+@import 'abstracts/mixin';
+//@import 'base/normalize.css';
 // @import 'components';
-// @import 'layout';
+@import 'layout/header';
 // @import 'pages';
 @import 'themes/theme';
 @import 'vendors/bootstrap';
@@ -14,7 +15,7 @@
 
 :root {
   font-size: 10px;
-  @media only screen and (max-width: 1024px){
+  @media only screen and (max-width: 1360px){
     font-size: 8px;
   }
   @media only screen and (max-width: $tablet){

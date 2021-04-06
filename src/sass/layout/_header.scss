@@ -1,0 +1,27 @@
+.header {
+    background-color: black;
+    text-transform: uppercase;
+    .wrapper {
+        @include flex;
+        color: $color-grey;
+    }
+    &__title {
+        &::before {
+            content: url('../../../assets/main/Component1.png');
+
+        }
+    }
+    &__nav {
+        .nav__list {
+            @include flex;
+            list-style-type: none;
+        }
+    }
+}
+.nav-list__item {
+    a {
+        text-decoration-line: none;
+        color: $color-grey;
+        padding: 0rem 2rem;
+    }
+}

@@ -1,11 +1,33 @@
-@import url(base/normalize.css);
+.header {
+  background-color: black;
+  text-transform: uppercase; }
+  .header .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    color: #E9E9E9; }
+  .header__title::before {
+    content: url("../../../assets/main/Component1.png"); }
+  .header__nav .nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    list-style-type: none; }
+
+.nav-list__item a {
+  text-decoration-line: none;
+  color: #E9E9E9;
+  padding: 0rem 2rem; }
+
 * {
   box-sizing: border-box;
   font-family: sans-serif; }
 
 :root {
   font-size: 10px; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1360px) {
     :root {
       font-size: 8px; } }
   @media only screen and (max-width: 768px) {
