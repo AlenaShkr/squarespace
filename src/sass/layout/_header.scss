@@ -2,18 +2,21 @@
     background-color: black;
     text-transform: uppercase;
     font-family: Roboto;
-    font-size: 14px;
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
     .wrapper {
         @include flex;
-        color: $color-grey;
     }
     &__title {
         display: flex;
         align-items: center;
+        color: $color-grey;
         &::before {
             content: url('../../../assets/main/Component1.png');
             margin-right: 3rem;
-
         }
     }
     &__nav {
@@ -23,15 +26,30 @@
         }
     }
 }
+
 .nav-list__item {
-    a {
+    * {
+        padding: 0rem 2rem;
         text-decoration-line: none;
         color: $color-grey;
-        padding: 0rem 2rem;
-
-        font-style: normal;
-        font-weight: 400;
-        line-height: 14px;
         text-align: left;
+        &:hover {
+            color: rgba(152, 232, 247, 0.952);
+        }
     }
 }
+
+.auth {
+    text-align: center;
+
+    &__login {
+        margin-right: 3rem;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    &__submit {
+        border: 0rem;
+        padding: 1.3rem 1rem;
+    }
+}
+
