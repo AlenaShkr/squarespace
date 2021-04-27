@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     color: #E9E9E9; }
   .header__title {
     display: flex;
@@ -15,14 +15,12 @@
     .header__title::before {
       content: url("../../../assets/main/Component1.png");
       margin-right: 3rem; }
-  .header__nav {
-    margin: auto 0rem; }
-    .header__nav .nav__list {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-content: center;
-      list-style-type: none; }
+  .header__nav .nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none; }
 
 .nav-list__item a {
   text-decoration-line: none;

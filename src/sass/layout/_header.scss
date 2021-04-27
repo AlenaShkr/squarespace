@@ -17,7 +17,6 @@
         }
     }
     &__nav {
-        margin: auto 0rem;
         .nav__list {
             @include flex;
             list-style-type: none;
