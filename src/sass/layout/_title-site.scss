@@ -1,6 +1,10 @@
 .title-site {
+    max-width: 1440px;
+    margin: 0 auto;
     color: #ffffff;
     background-image: url('../../../assets/main/title-image.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
     font-family: Roboto;
     font-style: normal;
     font-size: 14px;
