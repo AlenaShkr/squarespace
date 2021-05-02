@@ -26,16 +26,19 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 4.5rem;
-    padding-left: 3rem;
+    flex-wrap: wrap;
+    padding: 0rem 3rem;
     list-style-type: none; }
 
-.nav-list__item * {
-  text-decoration-line: none;
-  color: #E9E9E9;
-  text-align: left; }
-  .nav-list__item *:hover {
-    color: rgba(152, 232, 247, 0.952); }
+.nav-list__item {
+  padding-left: 3.5rem;
+  margin-right: 1rem; }
+  .nav-list__item * {
+    text-decoration-line: none;
+    color: #E9E9E9;
+    text-align: left; }
+    .nav-list__item *:hover {
+      color: rgba(152, 232, 247, 0.952); }
 
 .auth {
   text-align: center; }
