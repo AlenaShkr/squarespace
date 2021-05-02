@@ -1,4 +1,5 @@
 .header {
+  padding: 1rem 0rem 0.5rem;
   background-color: black;
   text-transform: uppercase;
   font-family: Roboto;
@@ -15,19 +16,21 @@
   .header__title {
     display: flex;
     align-items: center;
-    color: #E9E9E9; }
+    color: #E9E9E9;
+    letter-spacing: 0.38rem; }
     .header__title::before {
       content: url("../../../assets/main/Component1.png");
-      margin-right: 3rem; }
+      margin-right: 0.8rem; }
   .header__nav .nav__list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 4.5rem;
+    padding-left: 3rem;
     list-style-type: none; }
 
 .nav-list__item * {
-  padding: 0rem 2rem;
   text-decoration-line: none;
   color: #E9E9E9;
   text-align: left; }
@@ -37,12 +40,12 @@
 .auth {
   text-align: center; }
   .auth__login {
-    margin-right: 3rem;
+    margin-right: 4rem;
     text-decoration: none;
     color: #FFFFFF; }
   .auth__submit {
     border: 0rem;
-    padding: 1.3rem 1rem; }
+    padding: 2rem 4rem; }
 
 * {
   box-sizing: border-box;
@@ -55,6 +58,6 @@ body {
   background: #FFFFFF; }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1360px;
   width: 100%;
   margin: 0px auto; }
