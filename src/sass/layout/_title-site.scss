@@ -1,0 +1,31 @@
+.title-site {
+    color: #ffffff;
+    background-image: url('../../../assets/main/title-image.jpg');
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    .wrapper {
+        padding: 17.5rem 0rem;
+    }
+    &__feature {
+        width: 50%;
+        font-size: 18px;
+        text-transform: uppercase;
+        * {
+            margin-right: 4rem;
+        }
+    }
+    &__title {
+        width: 50%;
+        margin: 0rem;
+        font-size: 68px;
+    }
+    &__description {
+        width: 37%;
+        margin: 2rem 0rem 4.6rem;
+        font-size: 22px;
+    }
+}

@@ -1,4 +1,8 @@
 .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 1rem 0rem 0.5rem;
     background-color: black;
     text-transform: uppercase;
@@ -49,13 +53,14 @@
     text-align: center;
 
     &__login {
-        margin-right: 4rem;
+        margin-right: 3.5rem;
         text-decoration: none;
         color: #FFFFFF;
     }
     &__submit {
         border: 0rem;
-        padding: 2rem 4rem;
+        padding: 2rem 2.9rem;
+        text-transform: uppercase;
     }
 }
 

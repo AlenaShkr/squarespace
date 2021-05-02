@@ -1,4 +1,8 @@
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 1rem 0rem 0.5rem;
   background-color: black;
   text-transform: uppercase;
@@ -43,12 +47,39 @@
 .auth {
   text-align: center; }
   .auth__login {
-    margin-right: 4rem;
+    margin-right: 3.5rem;
     text-decoration: none;
     color: #FFFFFF; }
   .auth__submit {
     border: 0rem;
-    padding: 2rem 4rem; }
+    padding: 2rem 2.9rem;
+    text-transform: uppercase; }
+
+.title-site {
+  color: #ffffff;
+  background-image: url("../../../assets/main/title-image.jpg");
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left; }
+  .title-site .wrapper {
+    padding: 17.5rem 0rem; }
+  .title-site__feature {
+    width: 50%;
+    font-size: 18px;
+    text-transform: uppercase; }
+    .title-site__feature * {
+      margin-right: 4rem; }
+  .title-site__title {
+    width: 50%;
+    margin: 0rem;
+    font-size: 68px; }
+  .title-site__description {
+    width: 37%;
+    margin: 2rem 0rem 4.6rem;
+    font-size: 22px; }
 
 * {
   box-sizing: border-box;
